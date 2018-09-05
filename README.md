@@ -24,3 +24,4 @@ This is confirmed by your routes list:
 
 oc get routes
 
+
