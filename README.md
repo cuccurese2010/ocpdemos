@@ -19,6 +19,6 @@ Finally, let's choose the % of traffic between the applications to be equal:
 oc set route-backends ab v1=50 v2=50
 
 This is confirmed by your routes list:
-                                       oc get routes
+                                                                                                                             oc get routes
 
 
