@@ -13,15 +13,12 @@ $oc expose service v2 --name v2 -l name='v2'
 $oc expose service v1 --name='ab' -l name='ab'
 
 Now let's set the policy for the ab router to use roundrobin strategy to split the load between applications:
-
 oc annotate route/ab haproxy.router.openshift.io/balance=roundrobin
 
 Finally, let's choose the % of traffic between the applications to be equal:
-
 oc set route-backends ab v1=50 v2=50
 
 This is confirmed by your routes list:
-
 oc get routes
 
 
